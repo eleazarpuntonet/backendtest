@@ -18,10 +18,8 @@ use Illuminate\Http\Request;
 // });
 
 
-// Route::group(['middleware' => ['cors']], function () {
-    //Rutas a las que se permitirá acceso
-	Route::resource('users', 'usersController');
-// });
+Route::resource('users', 'usersController');
+Route::post('users/delete', 'usersController@massdelete')->name('users.massdelete');
 
 Route::get('/test', function (Request $request) {
     return "testing Exitoso";

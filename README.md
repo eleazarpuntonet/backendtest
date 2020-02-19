@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -80,4 +79,3 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 =======
 # backendtest
 Proyecto back-end para prueba de programacion
->>>>>>> 4fc7d5cc3d7ba01b742b6db407b71d04297ceb1a

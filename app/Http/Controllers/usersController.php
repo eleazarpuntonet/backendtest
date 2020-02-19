@@ -14,7 +14,7 @@ class usersController extends Controller
      */
     public function index()
     {
-        return User::get();
+        return User::where('status', 1)->get();
     }
 
     /**
@@ -79,5 +79,16 @@ class usersController extends Controller
         $user->status    = 0;
         $user->save();
         return $user;
+    }
+
+    public function massdelete(Request $request)
+    {
+
+        foreach($request->input('ids') as $clientid) {
+            $user            = User::find($clientid);
+            $user->status    = 0;
+            $user->save();
+        }
+        return $request->input('ids');
     }
 }
