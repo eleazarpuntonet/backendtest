@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "tienda": "Humana Inc.",
+        "direccion": "5692 Shelley Trail",
+        "telefono": "262-935-1466"
+    },
+    {
+        "id": 2,
+        "tienda": "REV Group, Inc.",
+        "direccion": "78178 Meadow Ridge Alley",
+        "telefono": "818-556-5943"
+    },
+    {
+        "id": 3,
+        "tienda": "Rigel Pharmaceuticals, Inc.",
+        "direccion": "710 Colorado Court",
+        "telefono": "717-731-4026"
+    },
+    {
+        "id": 4,
+        "tienda": "Heat Biologics, Inc.",
+        "direccion": "9789 Moose Lane",
+        "telefono": "700-554-6778"
+    },
+    {
+        "id": 5,
+        "tienda": "The Herzfeld Caribbean Basin Fund, Inc.",
+        "direccion": "45931 Surrey Parkway",
+        "telefono": "331-609-1515"
+    },
+    {
+        "id": 6,
+        "tienda": "NV5 Global, Inc.",
+        "direccion": "33187 Hoffman Street",
+        "telefono": "126-123-2407"
+    },
+    {
+        "id": 7,
+        "tienda": "Selective Insurance Group, Inc.",
+        "direccion": "2924 Morning Crossing",
+        "telefono": "248-262-4973"
+    },
+    {
+        "id": 8,
+        "tienda": "Wheaton Precious Metals Corp.",
+        "direccion": "999 Parkside Plaza",
+        "telefono": "205-462-8960"
+    },
+    {
+        "id": 9,
+        "tienda": "Aegon NV",
+        "direccion": "280 Darwin Street",
+        "telefono": "819-706-2256"
+    },
+    {
+        "id": 10,
+        "tienda": "Agilysys, Inc.",
+        "direccion": "16 Melody Center",
+        "telefono": "889-515-3743"
+    },
+    {
+        "id": 11,
+        "tienda": "Ominto, Inc.",
+        "direccion": "11 Kensington Lane",
+        "telefono": "699-100-0368"
+    },
+    {
+        "id": 12,
+        "tienda": "Antero Midstream GP LP",
+        "direccion": "63 Crowley Point",
+        "telefono": "975-557-5878"
+    },
+    {
+        "id": 13,
+        "tienda": "KCAP Financial, Inc.",
+        "direccion": "6747 Crowley Street",
+        "telefono": "315-281-6733"
+    },
+    {
+        "id": 14,
+        "tienda": "Chipotle Mexican Grill, Inc.",
+        "direccion": "88061 Bunting Alley",
+        "telefono": "572-715-6816"
+    },
+    {
+        "id": 15,
+        "tienda": "PICO Holdings Inc.",
+        "direccion": "2 Atwood Parkway",
+        "telefono": "420-809-7681"
+    },
+    {
+        "id": 16,
+        "tienda": "Williams Companies, Inc. (The)",
+        "direccion": "66 Cordelia Center",
+        "telefono": "579-935-5134"
+    },
+    {
+        "id": 17,
+        "tienda": "First Cash, Inc.",
+        "direccion": "749 Sullivan Park",
+        "telefono": "295-511-5374"
+    },
+    {
+        "id": 18,
+        "tienda": "Eaton Vance Corporation",
+        "direccion": "7 Dryden Lane",
+        "telefono": "787-499-4521"
+    },
+    {
+        "id": 19,
+        "tienda": "Sabine Royalty Trust",
+        "direccion": "16 Hermina Junction",
+        "telefono": "354-714-0936"
+    },
+    {
+        "id": 20,
+        "tienda": "Colony NorthStar, Inc.",
+        "direccion": "0120 Birchwood Crossing",
+        "telefono": "119-372-4329"
+    }
+]
