@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Stores;
+use App\Cars;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,6 +22,10 @@ use Illuminate\Http\Request;
 Route::resource('users', 'usersController');
 Route::post('users/delete', 'usersController@massdelete')->name('users.massdelete');
 
+Route::resource('stores', 'storeController');
+Route::post('stores/delete', 'storeController@massdelete')->name('stores.massdelete');
+
 Route::get('/test', function (Request $request) {
-    return "testing Exitoso";
+    return Cars::with(['tiendas_disponibles'])->get();
+    // return Stores::with(['autos_inventario'])->get();
 });

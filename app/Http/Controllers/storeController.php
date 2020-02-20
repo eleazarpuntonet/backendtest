@@ -3,27 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Stores;
 
 class storeController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     *@@
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return Stores::where('status', 1)->get();
     }
 
     /**
@@ -34,7 +25,12 @@ class storeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $store            = new Stores;
+        $store->storename = $request->input('storename');
+        $store->address   = $request->input('address');
+        $store->phone     = $request->input('phone');
+        $store->save();
+        return $store;
     }
 
     /**
@@ -45,18 +41,7 @@ class storeController extends Controller
      */
     public function show($id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        return Stores::find($id);
     }
 
     /**
@@ -68,7 +53,12 @@ class storeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $store            = Stores::find($id);
+        $store->storename = $request->input('storename');
+        $store->address   = $request->input('address');
+        $store->phone     = $request->input('phone');
+        $store->save();
+        return $store;
     }
 
     /**
@@ -80,5 +70,16 @@ class storeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function massdelete(Request $request)
+    {
+
+        foreach($request->input('ids') as $storeid) {
+            $store            = Stores::find($storeid);
+            $store->status    = 0;
+            $store->save();
+        }
+        return $request->input('ids');
     }
 }

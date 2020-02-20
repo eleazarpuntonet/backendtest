@@ -15,10 +15,11 @@ class storeseeder extends Seeder
     	$json_data = json_decode($json,true);
 
         foreach ($json_data as $storeData) {
-            $store                  = new App\Stores;
-            $store->storename        = $storeData['tienda'];
-            $store->address        = $storeData['direccion'];
-            $store->phone        = $storeData['telefono'];
+            $store            = new App\Stores;
+            $store->storename = $storeData['tienda'];
+            $store->address   = $storeData['direccion'];
+            $store->phone     = $storeData['telefono'];
+            $store->status     = 1;
             $store->save();
         }
     }

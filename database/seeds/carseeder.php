@@ -15,10 +15,10 @@ class carseeder extends Seeder
         	$json_data = json_decode($json,true);
 
             foreach ($json_data as $carData) {
-                $car                  = new App\Cars;
-                $car->model        = $carData['modelo'];
-                $car->year        = $carData['anio'];
-                $car->color        = $carData['color'];
+                $car        = new App\Cars;
+                $car->model = $carData['modelo'];
+                $car->year  = $carData['anio'];
+                $car->color = $carData['color'];
                 $car->save();
             }
     }

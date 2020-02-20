@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Stores extends Migration
+class Relaciones extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class Stores extends Migration
      */
     public function up()
     {
-        Schema::create('stores', function (Blueprint $table) {
+        Schema::create('inventario', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('storename');
-            $table->string('address');
-            $table->string('phone');
-            $table->integer('status');
+            $table->string('stores_id');
+            $table->string('cars_id');
+            $table->string('cantidad');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class Stores extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stores');
+        Schema::dropIfExists('inventario');
     }
 }
