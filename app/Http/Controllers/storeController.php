@@ -14,7 +14,7 @@ class storeController extends Controller
      */
     public function index()
     {
-        return Stores::where('status', 1)->get();
+        return Stores::with(['autos_inventario'])->where('status', 1)->get();
     }
 
     /**
